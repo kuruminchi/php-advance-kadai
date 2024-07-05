@@ -1,0 +1,233 @@
+/* index.php */
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  color: black;
+}
+header {
+  background-color: #ea0000;
+  padding: 20px;
+}
+header > nav > a {
+  color: white;
+  text-decoration: none;
+  margin-left: 150px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+a,
+button {
+  transition: 0.3s;
+}
+a:hover,
+button:hover {
+  opacity: 0.8;
+}
+#index-main {
+  text-align: center;
+  padding-top: 120px;
+}
+#index-main > h1 {
+  font-size: 40px;
+}
+#index-main > p {
+  margin-bottom: 70px;
+}
+.btn {
+  text-align: center;
+}
+.btn > a {
+  color: black;
+  background-color: #eac300;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+.btn > button {
+  color: black;
+  background-color: #eac300;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+footer {
+  text-align: center;
+  margin-top: auto;
+}
+footer > p {
+  font-size: 15px;
+}
+
+/* read.php */
+.books {
+  box-sizing: border-box;
+  padding: 30px 0 50px;
+}
+
+.books > h1 {
+  text-align: center;
+}
+
+.books > p {
+  text-align: center;
+  color: green;
+}
+
+.books-ui {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.books-ui div {
+  display: flex;
+  align-items: flex-end;
+}
+.books .btn {
+  text-align: right;
+  margin-right: 200px;
+}
+.side {
+  display: flex;
+}
+@media (max-width: 959px) {
+  .books-ui {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sort-img {
+    vertical-align: top;
+  }
+  .side {
+    margin-left: 250px;
+  }
+  .books-ui .btn {
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+}
+
+.sort-icon {
+  margin: 50px 0 0 200px;
+}
+.sort-icon .sort-img {
+  width: 30px;
+  height: 30px;
+}
+
+.search-form {
+  text-align: left;
+  padding-right: 450px;
+}
+.search-box {
+  max-width: 300px;
+  height: 20px;
+  padding: 4px 8px;
+  background: #eee;
+  border: none;
+  outline: 0;
+}
+
+.books-table {
+  text-align: center;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+.books-table,
+th {
+  border-bottom: 2px solid rgb(147, 147, 147);
+  height: 50px;
+}
+.books-table,
+td {
+  border-bottom: 1px solid rgb(222, 222, 222);
+  height: 50px;
+}
+/* A要素 B要素 {はA要素（親要素）の中の全ての子要素に装飾 */
+.books-table .book-code {
+  width: 150px;
+}
+.books-table .book-name {
+  width: 400px;
+}
+.books-table .price {
+  width: 100px;
+}
+.books-table .stock-quantity {
+  width: 100px;
+}
+.books-table .genre-code {
+  width: 150px;
+}
+.books-table .edit {
+  width: 50px;
+}
+.books-table .delete {
+  width: 50px;
+}
+
+.edit-icon, .delete-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* create.php */
+#create {
+  box-sizing: border-box;
+  max-width: 320px;
+  padding: 25px, 10px, 20px;
+  margin: 0 auto;
+}
+
+#create h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.btn > .back-btn {
+  margin-right: 230px;
+}
+.registration-form div {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 30px 0 20px 0;
+}
+.registration-form label {
+  margin-top: 10px;
+  text-align: left;
+}
+.registration-form label:first-child {
+  margin-top: 0;
+}
+.registration-form input,
+.registration-form select {
+  box-sizing: border-box;
+  height: 25px;
+}
+.submit-btn {
+  color: black;
+  background-color: #eac300;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 125px;
+  padding: 8px 16px;
+}
+
+
+/* update.php */
+#update {
+  box-sizing: border-box;
+  max-width: 320px;
+  padding: 25px, 10px, 20px;
+  margin: 0 auto;
+}
+
+#update h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}

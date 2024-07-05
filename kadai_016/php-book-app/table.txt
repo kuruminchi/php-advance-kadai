@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS genres (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    genre_code INT(11) NOT NULL UNIQUE,
+    genre_name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS books (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    book_code INT(11) NOT NULL,
+    book_name VARCHAR(50) NOT NULL,
+    price INT(11) NOT NULL,
+    stock_quantity INT(11) NOT NULL,
+    genre_code INT(11) NOT NULL,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (genre_code) REFERENCES genres (genre_code)
+);
